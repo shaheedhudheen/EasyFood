@@ -1,0 +1,22 @@
+{
+  "name": "easyfood",
+  "version": "1.0.0",
+  "description": "Food Ordering App ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel index.html"
+  },
+  "author": "Ahammed Shaheedhudheen",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}

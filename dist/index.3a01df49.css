@@ -1,0 +1,222 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+html {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.title {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.titleText {
+  font-weight: 600;
+}
+
+.logo {
+  width: 60px;
+}
+
+.navbar {
+  background-color: #f3f5f4;
+  justify-content: space-around;
+  display: flex;
+}
+
+.navItems {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.rating-rate {
+  gap: 20px;
+  display: flex;
+}
+
+.search-box {
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+
+.search-input {
+  width: 250px;
+  height: 50px;
+  border-style: 1px solid black;
+  border-color: #f10755;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.search-btn {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  display: grid;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 16px;
+  display: flex;
+  box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -1px #0000000f;
+}
+
+.header {
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+
+.skeleton {
+  animation: 1s linear infinite alternate skeleton-loading;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #a3b8c2;
+  }
+
+  100% {
+    background-color: #e0e7eb;
+  }
+}
+
+.header-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: .5rem;
+  border-radius: .125rem;
+  margin-bottom: .25rem;
+}
+
+.skeleton-text:last-child {
+  width: 80%;
+  margin-bottom: 0%;
+}
+
+button {
+  width: 100px;
+  color: #f3f5f4;
+  cursor: pointer;
+  background-color: #f10755;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+.contact-us {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.contact-us > h1 {
+  text-align: center;
+}
+
+.contact {
+  flex-direction: column;
+  display: flex;
+}
+
+.form-group {
+  flex-direction: column;
+  margin: 10px;
+  display: flex;
+}
+
+input, textarea {
+  padding: 5px;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.about-h {
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  color: #f3f5f4;
+  background-color: #f10755;
+  padding: 10px;
+}
+
+.info {
+  max-width: 50%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.restaurent-img {
+  width: 500px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.restaurent-info {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
