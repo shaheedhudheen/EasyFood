@@ -219,4 +219,18 @@ input, textarea {
   display: flex;
 }
 
+.menu-items {
+  gap: 20px;
+  margin: 20px 5px;
+  display: flex;
+}
+
+.item-img {
+  width: 100px;
+}
+
+.item-title {
+  color: #f10755;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */

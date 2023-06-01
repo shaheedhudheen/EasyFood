@@ -248,3 +248,17 @@ textarea {
   display: flex;
   justify-content: space-evenly;
 }
+
+.menu-items {
+  margin: 20px 5px;
+  display: flex;
+  gap: 20px;
+}
+
+.item-img {
+  width: 100px;
+}
+
+.item-title{
+  color: #f10755;
+}
