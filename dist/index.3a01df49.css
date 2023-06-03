@@ -233,4 +233,15 @@ input, textarea {
   color: #f10755;
 }
 
+.members {
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+}
+
+.member-img {
+  width: 200px;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */

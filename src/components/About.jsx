@@ -1,3 +1,5 @@
+import Members from "./MembersClass";
+
 const About = () => {
   return (
     <div className="about">
@@ -11,6 +13,9 @@ const About = () => {
         laboriosam debitis maxime vel tenetur totam rem velit aliquid sunt
         assumenda reiciendis cumque, perferendis dolorum!
       </p>
+
+      <h1>Our Team</h1>
+      <Members />
     </div>
   );
 };

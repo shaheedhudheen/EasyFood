@@ -262,3 +262,16 @@ textarea {
 .item-title{
   color: #f10755;
 }
+
+
+
+.members{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-img{
+  width: 200px;
+  border-radius: 50%;
+}
