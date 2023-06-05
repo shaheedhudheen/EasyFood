@@ -4,10 +4,14 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
+// import InstaMart from "./components/InstaMart";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Error from "./components/Error";
 import RestaurentInfo from "./components/RestaurentInfo";
+import { Suspense, lazy } from "react";
+
+const InstaMart = lazy(() => import("./components/InstaMart"));
 
 // App LayOut component
 const AppLayout = () => {
@@ -41,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "restaurent/:resId",
         element: <RestaurentInfo />,
+      },
+      {
+        path: "instamart",
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <InstaMart />
+          </Suspense>
+        ),
       },
     ],
   },

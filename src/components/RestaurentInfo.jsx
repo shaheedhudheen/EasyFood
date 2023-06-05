@@ -1,38 +1,19 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { IMG_CDN_URL } from "../config";
 import Shimmer from "./Shimmer";
+import useRestaurent from "../utils/useRestaurent";
 
 const RestaurentInfo = () => {
+
+  //useParams is a React Router Hook that allows you to access dynamic parameters in the URL. useParams returns an object of key:value pairs of URL parameters. - object destructuring used here
+  
   const { resId } = useParams();
   console.log(resId);
-  const [restaurent, setRestaurent] = useState({});
-  const [restaurentMenu, setRestaurentMenu] = useState([]);
 
-  useEffect(() => {
-    getRestaurentInfo();
-  }, []);
+  //custom hook for restaurent info and menu
+  const [restaurent, restaurentMenu] = useRestaurent(resId);
 
-  const getRestaurentInfo = async () => {
-    const info = await fetch(
-      `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=9.9312328&lng=76.26730409999999&restaurantId=${resId}`
-    );
-    const json = await info.json();
-    // console.log(json?.data?.cards[0].card.card.info);
-    // console.log(
-    //   json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card.itemCards.map(
-    //     (item) => item.card.info
-    //   )
-    // );
-
-    setRestaurent(json?.data?.cards[0]?.card?.card?.info);
-    setRestaurentMenu(
-      json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card.itemCards?.map(
-        (item) => item.card.info
-      )
-    );
-  };
-
+  //load shimmer if restaurent menu is not loaded
   if (!restaurentMenu) {
     return <Shimmer />;
   }

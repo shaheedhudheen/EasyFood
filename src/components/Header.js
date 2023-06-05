@@ -33,6 +33,9 @@ const Header = () => {
         <li>
           <NavLink to="cart">Cart</NavLink>
         </li>
+        <li>
+          <NavLink to="instamart">Instamart</NavLink>
+        </li>
 
         {isLogged ? (
           <button
