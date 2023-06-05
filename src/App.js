@@ -49,7 +49,13 @@ const router = createBrowserRouter([
       {
         path: "instamart",
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <div>
+                <h1>Loading....</h1>
+              </div>
+            }
+          >
             <InstaMart />
           </Suspense>
         ),
