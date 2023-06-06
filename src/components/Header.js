@@ -1,14 +1,14 @@
 import { useState } from "react";
-import logo from "../assets/logo.jpg";
-import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 // Title Component
 const Title = () => {
   return (
-    <a href="/" className="title">
-      <img src={logo} alt="logo" className="" />
-      <p className="titleText">Easy Food</p>
-    </a>
+    <Link to="/" className="flex items-center">
+      <img src={logo} alt="logo" className="w-16" />
+      <p className="font-semibold text-2xl text-gray-800">Easy Food</p>
+    </Link>
   );
 };
 
@@ -17,45 +17,49 @@ const Header = () => {
   const [isLogged, setIsLogged] = useState(true);
 
   return (
-    <div className="flex ">
-      <Title />
-
-      <ul className="navItems">
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="contact">Contact</NavLink>
-        </li>
-        <li>
-          <NavLink to="cart">Cart</NavLink>
-        </li>
-        <li>
-          <NavLink to="instamart">Instamart</NavLink>
-        </li>
-
-        {isLogged ? (
-          <button
-            onClick={() => {
-              setIsLogged(false);
-            }}
-          >
-            Log Out
-          </button>
-        ) : (
-          <button
-            onClick={() => {
-              setIsLogged(true);
-            }}
-          >
-            Log In
-          </button>
-        )}
-      </ul>
-    </div>
+    <header className="bg-white sticky top-0 z-10 px-8">
+      <nav className="flex justify-between items-center max-w-screen-xl mx-auto">
+        <Title />
+        <ul className="flex items-center gap-4 text-lg font-semibold text-gray-800">
+          <li className="hover:text-emerald-500">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="hover:text-emerald-500">
+            <NavLink to="about">About</NavLink>
+          </li>
+          <li className="hover:text-emerald-500">
+            <NavLink to="contact">Contact</NavLink>
+          </li>
+          <li className="hover:text-emerald-500">
+            <NavLink to="cart">Cart</NavLink>
+          </li>
+          <li className="hover:text-emerald-500">
+            <NavLink to="instamart">Instamart</NavLink>
+          </li>
+          <li>
+            {isLogged ? (
+              <button
+                className=" bg-red-500 px-4 py-2 rounded-xl text-white"
+                onClick={() => {
+                  setIsLogged(false);
+                }}
+              >
+                Log Out
+              </button>
+            ) : (
+              <button
+                className="bg-emerald-500 px-4 py-2 rounded-xl text-white"
+                onClick={() => {
+                  setIsLogged(true);
+                }}
+              >
+                Log In
+              </button>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

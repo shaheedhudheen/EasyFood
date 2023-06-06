@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import filterData from "../utils/filterData";
+import search from "../assets/search.png";
 
 // Body Component
 const Body = () => {
@@ -35,10 +36,10 @@ const Body = () => {
 
   return (
     <>
-      <div className="search-box">
+      <div className="flex justify-center gap-4 max-w-screen-xl mx-auto py-4">
         <input
           type="text"
-          className="search-input"
+          className="p-2 border-2 rounded-xl  focus:outline-emerald-400"
           placeholder="Search"
           value={searchInput}
           onChange={(e) => {
@@ -46,23 +47,25 @@ const Body = () => {
           }}
         />
         <button
-          className="search-btn"
+          className="bg-emerald-500 px-4 py-2 rounded-xl text-white"
           onClick={() => {
             const data = filterData(searchInput, allRestaurants);
             // filter the data
             setFilteredRestaurants(data);
           }}
         >
-          Search
+          <img src={search} alt="search" className="w-5 " />
         </button>
       </div>
 
       {allRestaurants.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto">
           {filteredRestaurants?.length === 0 ? (
-            <h1>No Restaurent Found</h1>
+            <div>
+              <h1>No Restaurant Found</h1>
+            </div>
           ) : (
             filteredRestaurants?.map((restaurant) => {
               return (
