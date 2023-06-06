@@ -598,7 +598,7 @@ const InstaMart = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Made For Demostrating Lazy Loading / Code Splitting "
+                children: "Made For Demostrating Code Splitting "
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
                 lineNumber: 4,

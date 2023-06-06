@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Title = () => {
   return (
     <a href="/" className="title">
-      <img src={logo} alt="logo" className="logo" />
+      <img src={logo} alt="logo" className="" />
       <p className="titleText">Easy Food</p>
     </a>
   );
@@ -17,7 +17,7 @@ const Header = () => {
   const [isLogged, setIsLogged] = useState(true);
 
   return (
-    <div className="navbar">
+    <div className="flex ">
       <Title />
 
       <ul className="navItems">
