@@ -1,6 +1,6 @@
 import React from "react";
 
-class MemberOne extends React.Component {
+class Member extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,11 +19,11 @@ class MemberOne extends React.Component {
     const { name, avatar_url, bio, location } = this.props.data;
     console.log("child Render");
     return (
-      <div className="member">
-        <img src={avatar_url} alt="" className="member-img" />
-        <h3> {name}</h3>
-        <h4> {bio}</h4>
-        <p> {location}</p>
+      <div className="flex flex-col items-center gap-2">
+        <img src={avatar_url} alt="" className="w-40 rounded-full" />
+        <h3 className="text-2xl font-bold"> {name}</h3>
+        <h4 className="font-semibold"> {bio}</h4>
+        <p className="font-normal"> {location}</p>
 
         {/* <button
           onClick={() => {
@@ -40,4 +40,4 @@ class MemberOne extends React.Component {
   }
 }
 
-export default MemberOne;
+export default Member;

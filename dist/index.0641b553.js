@@ -33312,10 +33312,10 @@ var _membersClass = require("./MembersClass");
 var _membersClassDefault = parcelHelpers.interopDefault(_membersClass);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "about",
+        className: "max-w-screen-xl mx-auto",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "about-h",
+                className: "text-4xl my-8 font-bold text-center",
                 children: "About Us"
             }, void 0, false, {
                 fileName: "src/components/About.jsx",
@@ -33323,29 +33323,32 @@ const About = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "this is the about page of the Easy Food Website"
+                className: "text-2xl my-4 font-normal",
+                children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa hic veritatis repellendus illum? Vitae dignissimos earum voluptatum, incidunt unde fugit temporibus vel illum at veritatis officia, iste voluptatem ducimus!"
             }, void 0, false, {
                 fileName: "src/components/About.jsx",
                 lineNumber: 5,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-2xl my-4 font-thin",
                 children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aspernatur voluptatem labore temporibus corrupti architecto dolores laborum quasi quia, odit numquam autem id ad ullam, reiciendis recusandae velit. Est iusto ad laborum quam voluptatum molestiae laboriosam debitis maxime vel tenetur totam rem velit aliquid sunt assumenda reiciendis cumque, perferendis dolorum!"
             }, void 0, false, {
                 fileName: "src/components/About.jsx",
-                lineNumber: 6,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-center my-4 font-medium text-3xl",
                 children: "Our Team"
             }, void 0, false, {
                 fileName: "src/components/About.jsx",
-                lineNumber: 15,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _membersClassDefault.default), {}, void 0, false, {
                 fileName: "src/components/About.jsx",
-                lineNumber: 16,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined)
         ]
@@ -33377,10 +33380,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _member1 = require("./Member1");
-var _member1Default = parcelHelpers.interopDefault(_member1);
-var _member2 = require("./Member2");
-var _member2Default = parcelHelpers.interopDefault(_member2);
+var _member = require("./Member");
+var _memberDefault = parcelHelpers.interopDefault(_member);
 class Members extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
@@ -33415,26 +33416,26 @@ class Members extends (0, _reactDefault.default).Component {
         const { member1 , member2  } = this.state;
         console.log("Parent Render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "members",
+            className: "flex justify-around",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _member1Default.default), {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _memberDefault.default), {
                     data: member1
                 }, void 0, false, {
                     fileName: "src/components/MembersClass.jsx",
-                    lineNumber: 41,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _member2Default.default), {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _memberDefault.default), {
                     data: member2
                 }, void 0, false, {
                     fileName: "src/components/MembersClass.jsx",
-                    lineNumber: 42,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/MembersClass.jsx",
-            lineNumber: 40,
+            lineNumber: 39,
             columnNumber: 12
         }, this);
     }
@@ -33446,11 +33447,11 @@ exports.default = Members;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Member1":"g8Hfa","./Member2":"9dPwL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g8Hfa":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8c88 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Member":"dLyY9"}],"dLyY9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$02ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8c88.prelude(module);
+$parcel$ReactRefreshHelpers$02ba.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33458,7 +33459,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class MemberOne extends (0, _reactDefault.default).Component {
+class Member extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
@@ -33474,133 +33475,61 @@ class MemberOne extends (0, _reactDefault.default).Component {
         const { name , avatar_url , bio , location  } = this.props.data;
         console.log("child Render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "member",
+            className: "flex flex-col items-center gap-2",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: avatar_url,
                     alt: "",
-                    className: "member-img"
+                    className: "w-40 rounded-full"
                 }, void 0, false, {
-                    fileName: "src/components/Member1.jsx",
+                    fileName: "src/components/Member.jsx",
                     lineNumber: 23,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-2xl font-bold",
                     children: [
                         " ",
                         name
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/Member1.jsx",
+                    fileName: "src/components/Member.jsx",
                     lineNumber: 24,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    className: "font-semibold",
                     children: [
                         " ",
                         bio
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/Member1.jsx",
+                    fileName: "src/components/Member.jsx",
                     lineNumber: 25,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "font-normal",
                     children: [
                         " ",
                         location
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/Member1.jsx",
+                    fileName: "src/components/Member.jsx",
                     lineNumber: 26,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
-            fileName: "src/components/Member1.jsx",
+            fileName: "src/components/Member.jsx",
             lineNumber: 22,
             columnNumber: 12
         }, this);
     }
 }
-exports.default = MemberOne;
+exports.default = Member;
 
-  $parcel$ReactRefreshHelpers$8c88.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9dPwL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$65ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$65ba.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class MemberTwo extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-    }
-    render() {
-        const { name , avatar_url , bio , location  } = this.props.data;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "member",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: avatar_url,
-                    alt: "",
-                    className: "member-img"
-                }, void 0, false, {
-                    fileName: "src/components/Member2.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        " ",
-                        name
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Member2.jsx",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                    children: [
-                        " ",
-                        bio
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Member2.jsx",
-                    lineNumber: 16,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: [
-                        " ",
-                        location
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Member2.jsx",
-                    lineNumber: 17,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Member2.jsx",
-            lineNumber: 13,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = MemberTwo;
-
-  $parcel$ReactRefreshHelpers$65ba.postlude(module);
+  $parcel$ReactRefreshHelpers$02ba.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

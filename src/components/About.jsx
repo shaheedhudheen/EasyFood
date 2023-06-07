@@ -2,10 +2,15 @@ import Members from "./MembersClass";
 
 const About = () => {
   return (
-    <div className="about">
-      <h1 className="about-h">About Us</h1>
-      <p>this is the about page of the Easy Food Website</p>
-      <p>
+    <div className="max-w-screen-xl mx-auto">
+      <h1 className="text-4xl my-8 font-bold text-center">About Us</h1>
+      <p className="text-2xl my-4 font-normal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus culpa hic
+        veritatis repellendus illum? Vitae dignissimos earum voluptatum,
+        incidunt unde fugit temporibus vel illum at veritatis officia, iste
+        voluptatem ducimus!
+      </p>
+      <p className="text-2xl my-4 font-thin">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci,
         aspernatur voluptatem labore temporibus corrupti architecto dolores
         laborum quasi quia, odit numquam autem id ad ullam, reiciendis
@@ -14,7 +19,7 @@ const About = () => {
         assumenda reiciendis cumque, perferendis dolorum!
       </p>
 
-      <h1>Our Team</h1>
+      <p className="text-center my-4 font-medium text-3xl">Our Team</p>
       <Members />
     </div>
   );

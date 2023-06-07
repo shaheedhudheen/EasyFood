@@ -1,6 +1,6 @@
 import React from "react";
-import MemberOne from "./Member1";
-import MemberTwo from "./Member2";
+import Member from "./Member";
+
 
 class Members extends React.Component {
   constructor(props) {
@@ -45,9 +45,9 @@ class Members extends React.Component {
     const { member1, member2 } = this.state;
     console.log("Parent Render");
     return (
-      <div className="members">
-        <MemberOne data={member1} />
-        <MemberTwo data={member2} />
+      <div className="flex justify-around">
+        <Member data={member1} />
+        <Member data={member2} />
       </div>
     );
   }
