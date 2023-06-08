@@ -16,9 +16,9 @@ class Members extends React.Component {
 
   async componentDidMount() {
     const data1 = await fetch("https://api.github.com/users/shaheedhudheen");
-    const json1 = await data1.json();
+    const json1 = await data1?.json();
     const data2 = await fetch("https://api.github.com/users/mohammed-saif");
-    const json2 = await data2.json();
+    const json2 = await data2?.json();
 
     this.setState({
       member1: json1,

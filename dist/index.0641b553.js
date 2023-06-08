@@ -3055,7 +3055,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About":"hkKyJ","react-router-dom":"9xmpe","./components/Error":"cKXa2","./components/Contact":"25EXR","./components/RestaurentInfo":"jDaUN","react":"21dqq","d9fdad9a1cb2a903":"2dT0d"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./components/Header":"knC38","./components/Body":"8yaV8","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/About":"hkKyJ","react-router-dom":"9xmpe","./components/Error":"cKXa2","./components/Contact":"25EXR","./components/RestaurentInfo":"jDaUN","react":"21dqq","d9fdad9a1cb2a903":"2dT0d"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("f2da168e9399ec6a");
 
@@ -27240,11 +27240,11 @@ module.exports = require("7a7b5fbc40e1e49c");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"hsJbF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"knC38":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e807 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bfed.prelude(module);
+$parcel$ReactRefreshHelpers$e807.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -27254,6 +27254,8 @@ var _react = require("react");
 var _logoPng = require("../assets/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _reactRouterDom = require("react-router-dom");
+var _cartPng = require("../assets/cart.png");
+var _cartPngDefault = parcelHelpers.interopDefault(_cartPng);
 var _s = $RefreshSig$();
 // Title Component
 const Title = ()=>{
@@ -27266,22 +27268,22 @@ const Title = ()=>{
                 alt: "logo",
                 className: "w-16"
             }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 8,
+                fileName: "src/components/Header.jsx",
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "font-semibold text-2xl text-gray-800",
                 children: "Easy Food"
             }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 9,
+                fileName: "src/components/Header.jsx",
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/Header.js",
-        lineNumber: 7,
+        fileName: "src/components/Header.jsx",
+        lineNumber: 8,
         columnNumber: 10
     }, undefined);
 };
@@ -27296,8 +27298,8 @@ const Header = ()=>{
             className: "flex justify-between items-center max-w-screen-xl mx-auto",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 18,
+                    fileName: "src/components/Header.jsx",
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27309,13 +27311,13 @@ const Header = ()=>{
                                 to: "/",
                                 children: "Home"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 21,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 22,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 20,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 21,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27324,13 +27326,13 @@ const Header = ()=>{
                                 to: "about",
                                 children: "About"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 24,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 23,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 24,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27339,28 +27341,36 @@ const Header = ()=>{
                                 to: "contact",
                                 children: "Contact"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 27,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 26,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 27,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:text-emerald-500",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.NavLink), {
                                 to: "cart",
-                                children: "Cart"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _cartPngDefault.default),
+                                    alt: "cart",
+                                    className: "w-7"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 32,
+                                    columnNumber: 13
+                                }, undefined)
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 30,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 31,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 29,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 30,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27369,13 +27379,13 @@ const Header = ()=>{
                                 to: "instamart",
                                 children: "Instamart"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 33,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 36,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 32,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 35,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27386,8 +27396,8 @@ const Header = ()=>{
                                 },
                                 children: "Log Out"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 36,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 39,
                                 columnNumber: 25
                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "bg-emerald-500 px-4 py-2 rounded-xl text-white",
@@ -27396,30 +27406,30 @@ const Header = ()=>{
                                 },
                                 children: "Log In"
                             }, void 0, false, {
-                                fileName: "src/components/Header.js",
-                                lineNumber: 40,
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 43,
                                 columnNumber: 27
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 35,
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 38,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/Header.js",
-                    lineNumber: 19,
+                    fileName: "src/components/Header.jsx",
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/Header.js",
-            lineNumber: 17,
+            fileName: "src/components/Header.jsx",
+            lineNumber: 18,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/Header.js",
-        lineNumber: 16,
+        fileName: "src/components/Header.jsx",
+        lineNumber: 17,
         columnNumber: 10
     }, undefined);
 };
@@ -27430,175 +27440,49 @@ var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "Header");
 
-  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+  $parcel$ReactRefreshHelpers$e807.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe","../assets/logo.png":"hfbs9"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/logo.png":"hfbs9","react-router-dom":"9xmpe","../assets/cart.png":"1Jw0b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hfbs9":[function(require,module,exports) {
+module.exports = require("74497c6bf91b4a1f").getBundleURL("lPpKD") + "logo.73091252.png" + "?" + Date.now();
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{"74497c6bf91b4a1f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
-var Refresh = require("c17388ad3a33d6c5");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
     }
+    return value;
 }
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
     }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
+    return "/";
 }
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
 }
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + " %exports% " + key);
-    }
-}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
 
-},{"c17388ad3a33d6c5":"786KC"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.11.1
  *
@@ -32818,44 +32702,173 @@ function getTargetMatch(matches, location) {
     return pathMatches[pathMatches.length - 1];
 } //#endregion
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hfbs9":[function(require,module,exports) {
-module.exports = require("74497c6bf91b4a1f").getBundleURL("lPpKD") + "logo.73091252.png" + "?" + Date.now();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
-},{"74497c6bf91b4a1f":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+},{}],"1Jw0b":[function(require,module,exports) {
+module.exports = require("203e389e72f1c63b").getBundleURL("lPpKD") + "cart.4586d277.png" + "?" + Date.now();
+
+},{"203e389e72f1c63b":"lgJ39"}],"km3Ru":[function(require,module,exports) {
 "use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
+var Refresh = require("c17388ad3a33d6c5");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
     }
-    return value;
 }
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
     }
-    return "/";
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
 }
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
 }
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + " %exports% " + key);
+    }
+}
 
-},{}],"8yaV8":[function(require,module,exports) {
+},{"c17388ad3a33d6c5":"786KC"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33393,9 +33406,9 @@ class Members extends (0, _reactDefault.default).Component {
     }
     async componentDidMount() {
         const data1 = await fetch("https://api.github.com/users/shaheedhudheen");
-        const json1 = await data1.json();
+        const json1 = await data1?.json();
         const data2 = await fetch("https://api.github.com/users/mohammed-saif");
-        const json2 = await data2.json();
+        const json2 = await data2?.json();
         this.setState({
             member1: json1,
             member2: json2
@@ -33623,9 +33636,10 @@ function Contact() {
         setMessage("");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "contact-us",
+        className: "max-w-screen-xl mx-auto",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-center my-4 text-2xl font-bold",
                 children: "Contact Us"
             }, void 0, false, {
                 fileName: "src/components/Contact.jsx",
@@ -33633,14 +33647,15 @@ function Contact() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                className: "contact",
+                className: "flex flex-col items-center gap-4",
                 onSubmit: handleSubmit,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "form-group",
+                        className: "flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 htmlFor: "name",
+                                className: "font-[500]",
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "src/components/Contact.jsx",
@@ -33648,6 +33663,7 @@ function Contact() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "border-2 rounded-xl outline-emerald-300 px-2 py-1 w-64",
                                 type: "text",
                                 id: "name",
                                 value: name,
@@ -33655,7 +33671,7 @@ function Contact() {
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Contact.jsx",
-                                lineNumber: 23,
+                                lineNumber: 25,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -33665,48 +33681,23 @@ function Contact() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "form-group",
+                        className: "flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 htmlFor: "email",
+                                className: "font-[500]",
                                 children: "Email"
                             }, void 0, false, {
                                 fileName: "src/components/Contact.jsx",
-                                lineNumber: 26,
+                                lineNumber: 28,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "border-2 rounded-xl outline-emerald-300 px-2 py-1 w-64",
                                 type: "email",
                                 id: "email",
                                 value: email,
                                 onChange: (e)=>setEmail(e.target.value),
-                                required: true
-                            }, void 0, false, {
-                                fileName: "src/components/Contact.jsx",
-                                lineNumber: 27,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Contact.jsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "form-group",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                htmlFor: "message",
-                                children: "Message"
-                            }, void 0, false, {
-                                fileName: "src/components/Contact.jsx",
-                                lineNumber: 30,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                id: "message",
-                                value: message,
-                                onChange: (e)=>setMessage(e.target.value),
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Contact.jsx",
@@ -33716,16 +33707,45 @@ function Contact() {
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Contact.jsx",
-                        lineNumber: 29,
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex flex-col",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                htmlFor: "message",
+                                className: "font-[500]",
+                                children: "Message"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.jsx",
+                                lineNumber: 34,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                className: "border-2 rounded-xl outline-emerald-300 px-2 py-1 w-64",
+                                id: "message",
+                                value: message,
+                                onChange: (e)=>setMessage(e.target.value),
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.jsx",
+                                lineNumber: 37,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Contact.jsx",
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         type: "submit",
-                        className: "submit-button",
+                        className: "bg-emerald-500 px-4 py-2 rounded-xl text-white text-lg font-semibold",
                         children: "Send"
                     }, void 0, false, {
                         fileName: "src/components/Contact.jsx",
-                        lineNumber: 33,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]

@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Error from "./components/Error";
 import RestaurentInfo from "./components/RestaurentInfo";
-import { Suspense, lazy } from "react";
+import { StrictMode, Suspense, lazy } from "react";
 
 const InstaMart = lazy(() => import("./components/InstaMart"));
 
@@ -66,4 +66,8 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
-root.render(<RouterProvider router={router} />);
+root.render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);

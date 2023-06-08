@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import cart from "../assets/cart.png"
 
 // Title Component
 const Title = () => {
@@ -31,7 +32,9 @@ const Header = () => {
             <NavLink to="contact">Contact</NavLink>
           </li>
           <li className="hover:text-emerald-500">
-            <NavLink to="cart">Cart</NavLink>
+            <NavLink to="cart">
+            <img src={cart} alt="cart" className="w-7"/>
+            </NavLink>
           </li>
           <li className="hover:text-emerald-500">
             <NavLink to="instamart">Instamart</NavLink>

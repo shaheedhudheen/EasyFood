@@ -20,12 +20,18 @@ function Contact() {
   };
 
   return (
-    <div className="contact-us">
-      <h1>Contact Us</h1>
-      <form className="contact" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
+    <div className="max-w-screen-xl mx-auto">
+      <h1 className="text-center my-4 text-2xl font-bold">Contact Us</h1>
+      <form
+        className="flex flex-col items-center gap-4"
+        onSubmit={handleSubmit}
+      >
+        <div className="flex flex-col">
+          <label htmlFor="name" className="font-[500]">
+            Name
+          </label>
           <input
+            className="border-2  rounded-xl outline-emerald-300 px-2 py-1 w-64"
             type="text"
             id="name"
             value={name}
@@ -33,9 +39,12 @@ function Contact() {
             required
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
+        <div className="flex flex-col">
+          <label htmlFor="email" className="font-[500]">
+            Email
+          </label>
           <input
+            className="border-2  rounded-xl outline-emerald-300 px-2 py-1 w-64"
             type="email"
             id="email"
             value={email}
@@ -43,16 +52,22 @@ function Contact() {
             required
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
+        <div className="flex flex-col">
+          <label htmlFor="message" className="font-[500]">
+            Message
+          </label>
           <textarea
+            className="border-2  rounded-xl outline-emerald-300 px-2 py-1 w-64"
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
-        <button type="submit" className="submit-button">
+        <button
+          type="submit"
+          className="bg-emerald-500 px-4 py-2 rounded-xl text-white text-lg font-semibold"
+        >
           Send
         </button>
       </form>
