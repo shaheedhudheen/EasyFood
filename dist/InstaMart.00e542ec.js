@@ -587,40 +587,146 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const InstaMart = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+var _react = require("react");
+var _upSvg = require("../assets/up.svg");
+var _upSvgDefault = parcelHelpers.interopDefault(_upSvg);
+var _downSvg = require("../assets/down.svg");
+var _downSvgDefault = parcelHelpers.interopDefault(_downSvg);
+var _s = $RefreshSig$();
+const Panel = ({ title , description , isVisible , onShow , onHide  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "py-4",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Nothing to See Here"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex items-end",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-2xl font-semibold",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/components/InstaMart.jsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _upSvgDefault.default),
+                        alt: "up arrow",
+                        onClick: onHide
+                    }, void 0, false, {
+                        fileName: "src/components/InstaMart.jsx",
+                        lineNumber: 14,
+                        columnNumber: 22
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _downSvgDefault.default),
+                        alt: "down arrow",
+                        onClick: onShow
+                    }, void 0, false, {
+                        fileName: "src/components/InstaMart.jsx",
+                        lineNumber: 14,
+                        columnNumber: 73
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 3,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Made For Demostrating Code Splitting "
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-lg font-medium py-2",
+                children: description
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 4,
+                lineNumber: 17,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/InstaMart.jsx",
+        lineNumber: 11,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Panel;
+const InstaMart = ()=>{
+    _s();
+    const [activeIndex, setActiveIndex] = (0, _react.useState)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "max-w-screen-xl mx-auto py-4",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-2xl font-medium text-center",
+                children: "About InstaMart"
+            }, void 0, false, {
+                fileName: "src/components/InstaMart.jsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+                title: "What is Instamart and how does it work?",
+                description: "Swiggy Instamart is an instant grocery delivery service powered by Swiggy, delivering groceries to your doorstep in just 15-30 minutes12. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies",
+                isVisible: activeIndex === 0,
+                onShow: ()=>setActiveIndex(0),
+                onHide: ()=>setActiveIndex()
+            }, void 0, false, {
+                fileName: "src/components/InstaMart.jsx",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+                title: "What are the benefits of ordering from Instamart?",
+                description: "You can get groceries delivered in minutes, just as fast as we deliver food. You can order from supermarkets near & far away from you, with a less than 2 hour delivery time. You can explore collections like Best Safety Standards, Veg Only, Healthy Food, Pocket Friendly, Premium, and more. You can save big with our best offers, get freebies, cashbacks, discounts, and other deals sponsored by us, and our host of restaurant, bank, and online wallet partners3. You can also add a tip for your Delivery Partner with your order.",
+                isVisible: activeIndex === 1,
+                onShow: ()=>setActiveIndex(1),
+                onHide: ()=>setActiveIndex()
+            }, void 0, false, {
+                fileName: "src/components/InstaMart.jsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+                title: "What are the delivery timings and charges of Swiggy Instamart?",
+                description: "The delivery timings of Swiggy Instamart are from 6am - 3am12. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order",
+                isVisible: activeIndex === 2,
+                onShow: ()=>setActiveIndex(2),
+                onHide: ()=>setActiveIndex()
+            }, void 0, false, {
+                fileName: "src/components/InstaMart.jsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "font-bold text-6xl text-center",
+                children: "Coming Sooon......"
+            }, void 0, false, {
+                fileName: "src/components/InstaMart.jsx",
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/InstaMart.jsx",
-        lineNumber: 2,
+        lineNumber: 22,
         columnNumber: 10
     }, undefined);
 };
-_c = InstaMart;
+_s(InstaMart, "QoCQorlVz8mr9WUOSI0zVI9mJ3U=");
+_c1 = InstaMart;
 exports.default = InstaMart;
-var _c;
-$RefreshReg$(_c, "InstaMart");
+var _c, _c1;
+$RefreshReg$(_c, "Panel");
+$RefreshReg$(_c1, "InstaMart");
 
   $parcel$ReactRefreshHelpers$fd94.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","9Bry0"], null, "parcelRequireaa5f")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/up.svg":"OdVPj","../assets/down.svg":"8afBD"}],"OdVPj":[function(require,module,exports) {
+module.exports = require("a1002613b2c52517").getBundleURL("kTe4X") + "up.5a81f1ac.svg" + "?" + Date.now();
+
+},{"a1002613b2c52517":"lgJ39"}],"8afBD":[function(require,module,exports) {
+module.exports = require("433b0bd67993fed6").getBundleURL("kTe4X") + "down.1b829ebb.svg" + "?" + Date.now();
+
+},{"433b0bd67993fed6":"lgJ39"}]},["1xC6H","9Bry0"], null, "parcelRequireaa5f")
 
 //# sourceMappingURL=InstaMart.00e542ec.js.map
