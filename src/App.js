@@ -4,23 +4,32 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
+// import Page from "./components/Page";
 // import InstaMart from "./components/InstaMart";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Error from "./components/Error";
 import RestaurentInfo from "./components/RestaurentInfo";
 import { StrictMode, Suspense, lazy } from "react";
+import UserContext from "./utils/UserContext";
+import { useState } from "react";
 
+//lazy loading/code splitting/dynamic rendering
 const InstaMart = lazy(() => import("./components/InstaMart"));
 
 // App LayOut component
 const AppLayout = () => {
+  const [user, setUser] = useState({
+    name: "Ahammed Shaheedhudheen",
+    email: "shaheedhudheenpambalath@gmail.com",
+  });
+
   return (
-    <>
+    <UserContext.Provider value={{ user: user, setUser: setUser }}>
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 };
 
@@ -46,6 +55,10 @@ const router = createBrowserRouter([
         path: "restaurent/:resId",
         element: <RestaurentInfo />,
       },
+      // {
+      //   path: "page",
+      //   element: <Page />,
+      // },
       {
         path: "instamart",
         element: (

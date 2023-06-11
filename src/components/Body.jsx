@@ -1,10 +1,11 @@
 import RestaurantCard from "./RestaurentCard";
 import { restaurantList } from "../config";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import filterData from "../utils/filterData";
 import search from "../assets/search.png";
+import UserContext from "../utils/UserContext";
 
 // Body Component
 const Body = () => {
@@ -31,12 +32,39 @@ const Body = () => {
     }
   };
 
+  const { user, setUser } = useContext(UserContext);
+
+  console.log(user);
+
   //early Return
   if (!allRestaurants) return null;
 
   return (
     <>
       <div className="flex justify-center gap-4 max-w-screen-xl mx-auto py-4">
+        {/* <p className="text-red-600 font-semibold">
+          {user.name} - <span className="text-blue-600">{user.email}</span>{" "}
+        </p> */}
+        {/* <input
+          type="text"
+          value={user.name}
+          onChange={(e) =>
+            setUser({
+              ...user,
+              name: e.target.value,
+            })
+          }
+        />
+        <input
+          type="text"
+          value={user.email}
+          onChange={(e) =>
+            setUser({
+              ...user,
+              email: e.target.value,
+            })
+          }
+        /> */}
         <input
           type="text"
           className="p-2 border-2 rounded-xl  focus:outline-emerald-400"

@@ -19,7 +19,7 @@ const RestaurentInfo = () => {
   }
 
   return (
-    <div className="restaurent-info">
+    <div className="">
       <div className="info">
         <h1>{restaurent.name}</h1>
         <img

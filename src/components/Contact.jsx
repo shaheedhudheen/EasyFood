@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Contact() {
   // state variables for form inputs
@@ -20,7 +20,7 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto my-4">
       <h1 className="text-center my-4 text-2xl font-bold">Contact Us</h1>
       <form
         className="flex flex-col items-center gap-4"

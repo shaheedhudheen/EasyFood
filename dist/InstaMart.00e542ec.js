@@ -663,7 +663,7 @@ const InstaMart = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
                 title: "What is Instamart and how does it work?",
-                description: "Swiggy Instamart is an instant grocery delivery service powered by Swiggy, delivering groceries to your doorstep in just 15-30 minutes12. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies",
+                description: " Instamart is an instant grocery delivery service powered by, delivering groceries to your doorstep in just 15-30 minutes. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies",
                 isVisible: activeIndex === 0,
                 onShow: ()=>setActiveIndex(0),
                 onHide: ()=>setActiveIndex()
@@ -684,8 +684,8 @@ const InstaMart = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
-                title: "What are the delivery timings and charges of Swiggy Instamart?",
-                description: "The delivery timings of Swiggy Instamart are from 6am - 3am12. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order",
+                title: "What are the delivery timings and charges of Instamart?",
+                description: "The delivery timings of Instamart are from 6am - 3am. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order",
                 isVisible: activeIndex === 2,
                 onShow: ()=>setActiveIndex(2),
                 onHide: ()=>setActiveIndex()
@@ -721,7 +721,7 @@ $RefreshReg$(_c1, "InstaMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../assets/up.svg":"OdVPj","../assets/down.svg":"8afBD"}],"OdVPj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/up.svg":"OdVPj","../assets/down.svg":"8afBD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"OdVPj":[function(require,module,exports) {
 module.exports = require("a1002613b2c52517").getBundleURL("kTe4X") + "up.5a81f1ac.svg" + "?" + Date.now();
 
 },{"a1002613b2c52517":"lgJ39"}],"8afBD":[function(require,module,exports) {

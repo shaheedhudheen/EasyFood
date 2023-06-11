@@ -1,7 +1,6 @@
 import React from "react";
 import Member from "./Member";
 
-
 class Members extends React.Component {
   constructor(props) {
     super(props);
@@ -25,27 +24,14 @@ class Members extends React.Component {
       member2: json2,
     });
 
-    this.timer = setInterval(() => {
-      console.log("Set Interval");
-    }, 1000);
-
     console.log("parentCDM");
-  }
-
-  componentDidUpdate() {
-    console.log("parent CDU");
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-    console.log("Parent CWU");
   }
 
   render() {
     const { member1, member2 } = this.state;
     console.log("Parent Render");
     return (
-      <div className="flex justify-around">
+      <div className="flex justify-around py-4">
         <Member data={member1} />
         <Member data={member2} />
       </div>

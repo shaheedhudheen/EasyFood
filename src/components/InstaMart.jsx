@@ -8,7 +8,7 @@ const Panel = ({ title, description, isVisible, onShow, onHide }) => {
       <div className="flex items-end">
         <p className="text-2xl font-semibold">{title}</p>
         {isVisible ? (
-          <img src={up} alt="up arrow"  onClick={onHide} />
+          <img src={up} alt="up arrow" onClick={onHide} />
         ) : (
           <img src={down} alt="down arrow" onClick={onShow} />
         )}
@@ -27,7 +27,7 @@ const InstaMart = () => {
 
       <Panel
         title="What is Instamart and how does it work?"
-        description="Swiggy Instamart is an instant grocery delivery service powered by Swiggy, delivering groceries to your doorstep in just 15-30 minutes12. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies"
+        description=" Instamart is an instant grocery delivery service powered by, delivering groceries to your doorstep in just 15-30 minutes. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies"
         isVisible={activeIndex === 0}
         onShow={() => setActiveIndex(0)}
         onHide={() => setActiveIndex()}
@@ -44,8 +44,8 @@ You can also add a tip for your Delivery Partner with your order."
         onHide={() => setActiveIndex()}
       />
       <Panel
-        title="What are the delivery timings and charges of Swiggy Instamart?"
-        description="The delivery timings of Swiggy Instamart are from 6am - 3am12. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order"
+        title="What are the delivery timings and charges of Instamart?"
+        description="The delivery timings of Instamart are from 6am - 3am. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order"
         isVisible={activeIndex === 2}
         onShow={() => setActiveIndex(2)}
         onHide={() => setActiveIndex()}
