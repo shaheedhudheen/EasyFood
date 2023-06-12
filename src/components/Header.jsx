@@ -15,7 +15,7 @@ const Title = () => {
 
 // Header Component
 const Header = () => {
-  const [isLogged, setIsLogged] = useState(true);
+  const [isLogged, setIsLogged] = useState(false);
 
   return (
     <header className="bg-white sticky top-0 z-10 px-8">
@@ -31,9 +31,13 @@ const Header = () => {
           <li className="hover:text-emerald-500">
             <NavLink to="contact">Contact</NavLink>
           </li>
-          <li className="hover:text-emerald-500">
+          <li className="">
             <NavLink to="cart">
-            <img src={cart} alt="cart" className="w-7"/>
+              <img
+                src={cart}
+                alt="cart"
+                className="w-7 hover:text-emerald-500"
+              />
             </NavLink>
           </li>
           <li className="hover:text-emerald-500">

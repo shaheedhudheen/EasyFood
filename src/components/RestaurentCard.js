@@ -23,7 +23,7 @@ const RestaurantCard = ({
         <div className="flex flex-col">
           <p className="text-base font-semibold">{cuisines.join(", ")}</p>
           <div className="rating-rate">
-            <h5>{avgRating === "--" ? "No Rating" : avgRating}</h5>
+            <h5>{avgRating === "--" ? "No Rating" : `Rating: ${avgRating}`}</h5>
             <h5>{costForTwoString}</h5>
           </div>
         </div>
@@ -34,4 +34,4 @@ const RestaurantCard = ({
 
 export default RestaurantCard;
 
-<div className="card"></div>;
+

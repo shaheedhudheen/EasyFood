@@ -13,6 +13,7 @@ import RestaurentInfo from "./components/RestaurentInfo";
 import { StrictMode, Suspense, lazy } from "react";
 import UserContext from "./utils/UserContext";
 import { useState } from "react";
+import Shimmer from "./components/Shimmer";
 
 //lazy loading/code splitting/dynamic rendering
 const InstaMart = lazy(() => import("./components/InstaMart"));
@@ -55,10 +56,10 @@ const router = createBrowserRouter([
         path: "restaurent/:resId",
         element: <RestaurentInfo />,
       },
-      // {
-      //   path: "page",
-      //   element: <Page />,
-      // },
+      {
+        path: "shimmer",
+        element: <Shimmer />,
+      },
       {
         path: "instamart",
         element: (
