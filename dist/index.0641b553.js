@@ -35877,13 +35877,13 @@ const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState,
     reducers: {
-        addItem: (state1, action)=>{
-            state1.items.push(action.payload);
+        addItem: (state, action)=>{
+            state.items.push(action.payload);
         },
-        removeItem: (state1)=>{
-            state1.items.pop();
+        removeItem: (state, action)=>{
+            state.items = state.items.filter((item)=>item.id !== action.payload.id);
         },
-        clearCart: ()=>{
+        clearCart: (state)=>{
             state.items = [];
         }
     }
@@ -39842,94 +39842,127 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactRedux = require("react-redux");
 var _config = require("../config");
+var _cartSlice = require("../utils/cartSlice");
 var _s = $RefreshSig$();
 const Cart = ()=>{
     _s();
+    const dispatch = (0, _reactRedux.useDispatch)();
     const items = (0, _reactRedux.useSelector)((state)=>state.cart.items);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto my-8",
-        children: items.map((item, index)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " bg-emerald-50 p-3 rounded-lg",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-center gap-4",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _config.IMG_CDN_URL) + item?.imageId,
-                            alt: "item image",
-                            className: "w-44 rounded-lg"
-                        }, void 0, false, {
-                            fileName: "src/components/Cart.jsx",
-                            lineNumber: 9,
-                            columnNumber: 15
-                        }, undefined)
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-red-500 px-2 py-1 rounded-lg text-white font-semibold",
+                        onClick: ()=>dispatch((0, _cartSlice.clearCart)()),
+                        children: "Clear Cart"
                     }, void 0, false, {
                         fileName: "src/components/Cart.jsx",
-                        lineNumber: 8,
-                        columnNumber: 13
+                        lineNumber: 9,
+                        columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "space-y-1",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-emerald-500 px-2 py-1 rounded-lg text-white font-semibold",
+                        children: "Checkout"
+                    }, void 0, false, {
+                        fileName: "src/components/Cart.jsx",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Cart.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto my-8",
+                children: items.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " bg-emerald-50 p-3 rounded-lg flex flex-col items-start",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-semibold text-xl",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _config.IMG_CDN_URL) + item?.imageId,
+                                    alt: "item image",
+                                    className: " rounded-lg"
+                                }, void 0, false, {
+                                    fileName: "src/components/Cart.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Cart.jsx",
+                                lineNumber: 19,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "space-y-1",
                                 children: [
-                                    " ",
-                                    item.name
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "font-semibold text-xl",
+                                        children: [
+                                            " ",
+                                            item.name
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Cart.jsx",
+                                        lineNumber: 23,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: [
+                                            "₹",
+                                            item.price / 100
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Cart.jsx",
+                                        lineNumber: 24,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: item.category
+                                    }, void 0, false, {
+                                        fileName: "src/components/Cart.jsx",
+                                        lineNumber: 25,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        className: "bg-emerald-500 px-2 py-1 rounded-lg text-white font-semibold",
+                                        onClick: ()=>{
+                                            dispatch((0, _cartSlice.removeItem)(item));
+                                        },
+                                        children: "remove"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Cart.jsx",
+                                        lineNumber: 26,
+                                        columnNumber: 17
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Cart.jsx",
-                                lineNumber: 12,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: [
-                                    "₹",
-                                    item.price / 100
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Cart.jsx",
-                                lineNumber: 13,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: item.category
-                            }, void 0, false, {
-                                fileName: "src/components/Cart.jsx",
-                                lineNumber: 14,
-                                columnNumber: 15
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "bg-emerald-500 px-2 py-1 rounded-lg text-white font-semibold",
-                                onClick: ()=>{
-                                    dispatch();
-                                },
-                                children: "remove"
-                            }, void 0, false, {
-                                fileName: "src/components/Cart.jsx",
-                                lineNumber: 15,
+                                lineNumber: 22,
                                 columnNumber: 15
                             }, undefined)
                         ]
-                    }, void 0, true, {
+                    }, item.id, true, {
                         fileName: "src/components/Cart.jsx",
-                        lineNumber: 11,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, item.id, true, {
+                        lineNumber: 18,
+                        columnNumber: 16
+                    }, undefined);
+                })
+            }, void 0, false, {
                 fileName: "src/components/Cart.jsx",
-                lineNumber: 7,
-                columnNumber: 14
-            }, undefined);
-        })
-    }, void 0, false, {
-        fileName: "src/components/Cart.jsx",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
-_s(Cart, "tY2Gvv5VcC5OmHFNMSHq17tjIN8=", false, function() {
+_s(Cart, "HX/EjTF0AkF4qSmVd/bcOkNE8Fo=", false, function() {
     return [
+        (0, _reactRedux.useDispatch),
         (0, _reactRedux.useSelector)
     ];
 });
@@ -39943,7 +39976,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"bdVon","../config":"jtCLN"}],"2dT0d":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"bdVon","../config":"jtCLN","../utils/cartSlice":"5RXlr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2dT0d":[function(require,module,exports) {
 module.exports = require("10c2757f0b63757e")(require("66793f639d7a5359").getBundleURL("lPpKD") + "InstaMart.00e542ec.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
