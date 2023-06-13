@@ -14,6 +14,10 @@ import { StrictMode, Suspense, lazy } from "react";
 import UserContext from "./utils/UserContext";
 import { useState } from "react";
 import Shimmer from "./components/Shimmer";
+import Counter from "./components/Counter";
+
+import { store } from "./utils/store";
+import { Provider } from "react-redux";
 
 //lazy loading/code splitting/dynamic rendering
 const InstaMart = lazy(() => import("./components/InstaMart"));
@@ -26,11 +30,13 @@ const AppLayout = () => {
   });
 
   return (
-    <UserContext.Provider value={{ user: user, setUser: setUser }}>
-      <Header />
-      <Outlet />
-      <Footer />
-    </UserContext.Provider>
+    <Provider store={store}>
+      <UserContext.Provider value={{ user: user, setUser: setUser }}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -57,8 +63,8 @@ const router = createBrowserRouter([
         element: <RestaurentInfo />,
       },
       {
-        path: "shimmer",
-        element: <Shimmer />,
+        path: "counter",
+        element: <Counter />,
       },
       {
         path: "instamart",
