@@ -3,7 +3,13 @@ import { IMG_CDN_URL } from "../config";
 import Shimmer from "./Shimmer";
 import useRestaurent from "../utils/useRestaurent";
 
+import { useSelector, useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
+
 const RestaurentInfo = () => {
+  const items = useSelector((state) => state.cart.items);
+  const dispatch = useDispatch();
+
   //useParams is a React Router Hook that allows you to access dynamic parameters in the URL. useParams returns an object of key:value pairs of URL parameters. - object destructuring used here
 
   const { resId } = useParams();
@@ -17,6 +23,7 @@ const RestaurentInfo = () => {
     return <Shimmer />;
   }
 
+  console.log(items);
   return (
     <div className="grid grid-cols-2 max-w-screen-xl mx-auto my-4 ">
       <div>
@@ -45,16 +52,21 @@ const RestaurentInfo = () => {
             >
               <div>
                 <img
-                  src={IMG_CDN_URL + item.imageId}
+                  src={IMG_CDN_URL + item?.imageId}
                   alt="item image"
                   className="w-44 rounded-lg"
                 />
               </div>
               <div className="space-y-1">
                 <p className="font-semibold text-xl"> {item.name}</p>
-                <p >₹{item.price / 100}</p>
-                <p >{item.category}</p>
-                <button className="bg-emerald-500 px-2 py-1 rounded-lg text-white font-semibold">
+                <p>₹{item.price / 100}</p>
+                <p>{item.category}</p>
+                <button
+                  className="bg-emerald-500 px-2 py-1 rounded-lg text-white font-semibold"
+                  onClick={() => {
+                    dispatch(addItem(item));
+                  }}
+                >
                   Add
                 </button>
               </div>

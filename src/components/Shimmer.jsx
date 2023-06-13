@@ -21,10 +21,10 @@ const Card = () => {
 };
 
 const Shimmer = () => {
-  const cards = new Array(18).fill("card");
+  const cards = new Array(12).fill("card");
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto my-8">
       {cards.map((card, index) => {
         return <Card key={index} />;
       })}

@@ -18,6 +18,7 @@ import Counter from "./components/Counter";
 
 import { store } from "./utils/store";
 import { Provider } from "react-redux";
+import Cart from "./components/Cart";
 
 //lazy loading/code splitting/dynamic rendering
 const InstaMart = lazy(() => import("./components/InstaMart"));
@@ -63,8 +64,8 @@ const router = createBrowserRouter([
         element: <RestaurentInfo />,
       },
       {
-        path: "counter",
-        element: <Counter />,
+        path: "cart",
+        element: <Cart />,
       },
       {
         path: "instamart",
