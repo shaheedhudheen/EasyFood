@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],
+  
 };
 
 export const cartSlice = createSlice({
@@ -15,6 +16,7 @@ export const cartSlice = createSlice({
       state.items = state.items.filter((item) => item.id !== action.payload.id);
     },
     clearCart: (state) => {
+      console.log(state.number)
       state.items = [];
     },
   },

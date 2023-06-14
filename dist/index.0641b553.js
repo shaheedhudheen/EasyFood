@@ -35884,6 +35884,7 @@ const cartSlice = (0, _toolkit.createSlice)({
             state.items = state.items.filter((item)=>item.id !== action.payload.id);
         },
         clearCart: (state)=>{
+            console.log(state.number);
             state.items = [];
         }
     }
