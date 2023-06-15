@@ -584,15 +584,20 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$fd94.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _upSvg = require("../assets/up.svg");
-var _upSvgDefault = parcelHelpers.interopDefault(_upSvg);
-var _downSvg = require("../assets/down.svg");
-var _downSvgDefault = parcelHelpers.interopDefault(_downSvg);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("5af8ffd13f696a09");
+var _up = _interopRequireDefault(require("2af737adc3fd4022"));
+var _down = _interopRequireDefault(require("e388c6b793cd2215"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const Panel = ({ title , description , isVisible , onShow , onHide  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "py-4",
@@ -605,30 +610,30 @@ const Panel = ({ title , description , isVisible , onShow , onHide  })=>{
                         children: title
                     }, void 0, false, {
                         fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 13,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, undefined),
                     isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _upSvgDefault.default),
+                        src: _up.default,
                         alt: "up arrow",
                         onClick: onHide
                     }, void 0, false, {
                         fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 14,
+                        lineNumber: 21,
                         columnNumber: 22
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _downSvgDefault.default),
+                        src: _down.default,
                         alt: "down arrow",
                         onClick: onShow
                     }, void 0, false, {
                         fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 14,
-                        columnNumber: 73
+                        lineNumber: 21,
+                        columnNumber: 82
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 12,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -636,19 +641,18 @@ const Panel = ({ title , description , isVisible , onShow , onHide  })=>{
                 children: description
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 17,
+                lineNumber: 24,
                 columnNumber: 21
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/InstaMart.jsx",
-        lineNumber: 11,
+        lineNumber: 18,
         columnNumber: 10
     }, undefined);
 };
 _c = Panel;
 const InstaMart = ()=>{
-    _s();
     const [activeIndex, setActiveIndex] = (0, _react.useState)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "max-w-screen-xl mx-auto py-4",
@@ -658,7 +662,7 @@ const InstaMart = ()=>{
                 children: "About InstaMart"
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 23,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
@@ -669,7 +673,7 @@ const InstaMart = ()=>{
                 onHide: ()=>setActiveIndex()
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 25,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
@@ -680,7 +684,7 @@ const InstaMart = ()=>{
                 onHide: ()=>setActiveIndex()
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 26,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
@@ -691,7 +695,7 @@ const InstaMart = ()=>{
                 onHide: ()=>setActiveIndex()
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 31,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -699,19 +703,19 @@ const InstaMart = ()=>{
                 children: "Coming Sooon......"
             }, void 0, false, {
                 fileName: "src/components/InstaMart.jsx",
-                lineNumber: 33,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/InstaMart.jsx",
-        lineNumber: 22,
+        lineNumber: 29,
         columnNumber: 10
     }, undefined);
 };
-_s(InstaMart, "QoCQorlVz8mr9WUOSI0zVI9mJ3U=");
 _c1 = InstaMart;
-exports.default = InstaMart;
+var _default = InstaMart;
+exports.default = _default;
 var _c, _c1;
 $RefreshReg$(_c, "Panel");
 $RefreshReg$(_c1, "InstaMart");
@@ -721,7 +725,7 @@ $RefreshReg$(_c1, "InstaMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/up.svg":"OdVPj","../assets/down.svg":"8afBD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"OdVPj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","5af8ffd13f696a09":"21dqq","2af737adc3fd4022":"OdVPj","e388c6b793cd2215":"8afBD"}],"OdVPj":[function(require,module,exports) {
 module.exports = require("a1002613b2c52517").getBundleURL("kTe4X") + "up.5a81f1ac.svg" + "?" + Date.now();
 
 },{"a1002613b2c52517":"lgJ39"}],"8afBD":[function(require,module,exports) {
