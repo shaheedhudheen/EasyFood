@@ -1,3 +1,7 @@
-- Practice making a store, slices and do read and write operations using Redux Store
-- Build Cart Flow using Redux Store
+- Setup React Testing Library  ✅
 
+- Write Unit Tests for Header Component to test for Logo, Cart - 0 items and Online Status
+
+- Write Integration Test case for search feature on the Homepage
+
+- Write Integration Test case for Add to Cart flow

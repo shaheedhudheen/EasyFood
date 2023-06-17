@@ -584,7 +584,6 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$fd94.prelude(module);
 
 try {
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -593,125 +592,78 @@ exports.default = void 0;
 var _react = require("5af8ffd13f696a09");
 var _up = _interopRequireDefault(require("2af737adc3fd4022"));
 var _down = _interopRequireDefault(require("e388c6b793cd2215"));
+var _jsxRuntime = require("56fb8c99a71f7e67");
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
     };
 }
 const Panel = ({ title , description , isVisible , onShow , onHide  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("section", {
         className: "py-4",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                 className: "flex items-end",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                         className: "text-2xl font-semibold",
                         children: title
-                    }, void 0, false, {
-                        fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 20,
-                        columnNumber: 9
-                    }, undefined),
-                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    }),
+                    isVisible ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                         src: _up.default,
                         alt: "up arrow",
                         onClick: onHide
-                    }, void 0, false, {
-                        fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 21,
-                        columnNumber: 22
-                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                         src: _down.default,
                         alt: "down arrow",
                         onClick: onShow
-                    }, void 0, false, {
-                        fileName: "src/components/InstaMart.jsx",
-                        lineNumber: 21,
-                        columnNumber: 82
-                    }, undefined)
+                    })
                 ]
-            }, void 0, true, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            }),
+            isVisible && /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                 className: "text-lg font-medium py-2",
                 children: description
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 24,
-                columnNumber: 21
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/components/InstaMart.jsx",
-        lineNumber: 18,
-        columnNumber: 10
-    }, undefined);
+    });
 };
 _c = Panel;
 const InstaMart = ()=>{
     const [activeIndex, setActiveIndex] = (0, _react.useState)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         className: "max-w-screen-xl mx-auto py-4",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                 className: "text-2xl font-medium text-center",
                 children: "About InstaMart"
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Panel, {
                 title: "What is Instamart and how does it work?",
                 description: " Instamart is an instant grocery delivery service powered by, delivering groceries to your doorstep in just 15-30 minutes. You can order any time from 6am - 3am and get daily essentials, fresh fruits & veggies, dairy, bread & eggs, snacks & indulgences, and emergency supplies",
                 isVisible: activeIndex === 0,
                 onShow: ()=>setActiveIndex(0),
                 onHide: ()=>setActiveIndex()
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 32,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Panel, {
                 title: "What are the benefits of ordering from Instamart?",
-                description: "You can get groceries delivered in minutes, just as fast as we deliver food. You can order from supermarkets near & far away from you, with a less than 2 hour delivery time. You can explore collections like Best Safety Standards, Veg Only, Healthy Food, Pocket Friendly, Premium, and more. You can save big with our best offers, get freebies, cashbacks, discounts, and other deals sponsored by us, and our host of restaurant, bank, and online wallet partners3. You can also add a tip for your Delivery Partner with your order.",
+                description: "You can get groceries delivered in minutes, just as fast as we deliver food.\r\nYou can order from supermarkets near & far away from you, with a less than 2 hour delivery time.\r\nYou can explore collections like Best Safety Standards, Veg Only, Healthy Food, Pocket Friendly, Premium, and more.\r\nYou can save big with our best offers, get freebies, cashbacks, discounts, and other deals sponsored by us, and our host of restaurant, bank, and online wallet partners3.\r\nYou can also add a tip for your Delivery Partner with your order.",
                 isVisible: activeIndex === 1,
                 onShow: ()=>setActiveIndex(1),
                 onHide: ()=>setActiveIndex()
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Panel, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Panel, {
                 title: "What are the delivery timings and charges of Instamart?",
                 description: "The delivery timings of Instamart are from 6am - 3am. The delivery charges vary depending on the distance and the order value. You can check the delivery charges on the app before placing your order",
                 isVisible: activeIndex === 2,
                 onShow: ()=>setActiveIndex(2),
                 onHide: ()=>setActiveIndex()
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                 className: "font-bold text-6xl text-center",
                 children: "Coming Sooon......"
-            }, void 0, false, {
-                fileName: "src/components/InstaMart.jsx",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/components/InstaMart.jsx",
-        lineNumber: 29,
-        columnNumber: 10
-    }, undefined);
+    });
 };
 _c1 = InstaMart;
 var _default = InstaMart;
@@ -725,7 +677,7 @@ $RefreshReg$(_c1, "InstaMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","5af8ffd13f696a09":"21dqq","2af737adc3fd4022":"OdVPj","e388c6b793cd2215":"8afBD"}],"OdVPj":[function(require,module,exports) {
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","5af8ffd13f696a09":"21dqq","2af737adc3fd4022":"OdVPj","e388c6b793cd2215":"8afBD","56fb8c99a71f7e67":"6AEwr"}],"OdVPj":[function(require,module,exports) {
 module.exports = require("a1002613b2c52517").getBundleURL("kTe4X") + "up.5a81f1ac.svg" + "?" + Date.now();
 
 },{"a1002613b2c52517":"lgJ39"}],"8afBD":[function(require,module,exports) {

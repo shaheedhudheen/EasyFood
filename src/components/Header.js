@@ -1,10 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
-import cart from "../assets/cart.png";
-
 import { useSelector } from "react-redux";
-
 
 // Title Component
 const Title = () => {
@@ -37,7 +34,9 @@ const Header = () => {
             <NavLink to="contact">Contact</NavLink>
           </li>
           <li className="">
-            <NavLink to="cart" className="w-7 hover:text-emerald-500">Cart({items.length})</NavLink>
+            <NavLink to="cart" className="w-7 hover:text-emerald-500">
+              Cart({items.length})
+            </NavLink>
           </li>
           <li className="hover:text-emerald-500">
             <NavLink to="instamart">Instamart</NavLink>
