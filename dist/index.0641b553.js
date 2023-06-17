@@ -26670,7 +26670,8 @@ const Title = ()=>{
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                 src: _logo.default,
                 alt: "logo",
-                className: "w-16"
+                className: "w-16",
+                "data-testid": "logo"
             }),
             /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                 className: "font-semibold text-2xl text-gray-800",
@@ -35602,8 +35603,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var process = require("da060bd0962d39d0");
 var global = arguments[3];
+var process = require("da060bd0962d39d0");
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({

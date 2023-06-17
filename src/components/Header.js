@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 const Title = () => {
   return (
     <Link to="/" className="flex items-center">
-      <img src={logo} alt="logo" className="w-16" />
+      <img src={logo} alt="logo" className="w-16" data-testid="logo"/>
       <p className="font-semibold text-2xl text-gray-800">Easy Food</p>
     </Link>
   );
