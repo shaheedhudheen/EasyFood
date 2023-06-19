@@ -34679,7 +34679,6 @@ const Body = ()=>{
         }
     };
     const { user , setUser  } = (0, _react.useContext)(_UserContext.default);
-    console.log(user);
     //early Return
     if (!allRestaurants) return null;
     return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
@@ -34883,6 +34882,7 @@ const Shimmer = ()=>{
     const cards = new Array(12).fill("card");
     return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
         className: "grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 max-w-screen-xl mx-auto my-8",
+        "data-testid": "shimmer",
         children: cards.map((card, index)=>{
             return /*#__PURE__*/ (0, _jsxRuntime.jsx)(Card, {}, index);
         })

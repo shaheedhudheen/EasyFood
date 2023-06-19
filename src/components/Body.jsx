@@ -34,8 +34,6 @@ const Body = () => {
 
   const { user, setUser } = useContext(UserContext);
 
-  console.log(user);
-
   //early Return
   if (!allRestaurants) return null;
 

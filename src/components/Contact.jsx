@@ -14,6 +14,7 @@ function Contact() {
     ); // show a confirmation message
     // TODO: send the form data to a backend service or an email address
     // reset the form inputs
+    
     setName("");
     setEmail("");
     setMessage("");
